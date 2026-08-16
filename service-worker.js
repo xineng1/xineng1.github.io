@@ -7,9 +7,7 @@ const SHELL = [
   '/',
   '/index.html',
   '/manifest.webmanifest',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
-  '/icons/maskable-512.png'
+  '/icons/icon.svg'
 ];
 
 self.addEventListener('install', function (e) {
@@ -36,7 +34,7 @@ self.addEventListener('fetch', function (e) {
   const req = e.request;
   if (req.method !== 'GET') return;
   const u = new URL(req.url);
-  if (u.origin !== self.location.origin) return;
+  if (u.origin !== self.location.origin) return; // 跨域（Supabase 等）直接走网络
   e.respondWith((async function () {
     try {
       const r = await fetch(req);
