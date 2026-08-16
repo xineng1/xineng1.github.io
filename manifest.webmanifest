@@ -1,0 +1,17 @@
+{
+  "name": "花光首富的十个亿",
+  "short_name": "首富败家",
+  "description": "多人实时同步的记账游戏：把首富的十个亿花光，看谁先破产。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff5fb",
+  "theme_color": "#ff8fb6",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
